@@ -73,8 +73,7 @@ const allocationClasses = [
   'bg-pink-500',
 ];
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = '/api';
 
 export default function InvestmentsPage() {
   const router = useRouter();

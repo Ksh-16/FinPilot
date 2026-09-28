@@ -1,7 +1,6 @@
 // Lightweight API client for the FinPilot backend.
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_BASE_URL = "/api";
 
 async function postJSON<T>(path: string, body: object): Promise<T> {
   const cleanPath = path.startsWith('/api') ? path.slice(4) : path;

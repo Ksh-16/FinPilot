@@ -15,12 +15,12 @@ export default function FutureCostSimulator() {
 
   useEffect(() => {
     const timeout = setTimeout(async () => {
-      try {
-        const res = await api.getFutureCost({ cost, years, inflation });
-        setResult(res);
-      } catch (e) {
-        // ignore
-      }
+     try {
+  const res = await api.getFutureCost({ cost, years, inflation });
+  setResult(res);
+} catch (e) {
+  console.error("Future cost API error:", e);
+}
     }, 300);
     return () => clearTimeout(timeout);
   }, [cost, years, inflation]);
