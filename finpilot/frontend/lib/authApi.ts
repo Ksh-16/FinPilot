@@ -1,7 +1,8 @@
 // Auth utilities — token storage + typed API calls for auth, expenses, chat.
 // Uses the same /api proxy rewrite as lib/api.ts (next.config.js).
 
-const BASE = '/api';
+const BASE =
+  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
 async function request<T>(
   path: string,
