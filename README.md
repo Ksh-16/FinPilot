@@ -21,7 +21,7 @@ https://fin-pilot-full-stack-website.vercel.app/
 https://finpilot-backend-sd6y.onrender.com
 
 ### 💻 GitHub
-https://github.com/KhC13/FinPilot--Full-Stack-Website
+https://github.com/Ksh-16/FinPilot
 
 ---
 
